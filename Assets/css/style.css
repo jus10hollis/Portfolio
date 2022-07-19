@@ -1,0 +1,149 @@
+/* {
+    outline: 3px solid limegreen !important;
+    background: rgba(0, 151, 0, 0.1) !important;
+    }
+*/
+
+html {
+   display: block; 
+}
+
+body {
+    height: 100%;
+    font-family: sans-serif;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header {
+   display: flex;
+   padding: 1%;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   min-height: 80px;
+   width: 100%;
+   align-content: center;
+   margin: 0 0 20px 0;
+   float: inline-start;
+   background-color:lightslategray;
+   color:ghostwhite;
+}
+
+
+/* Figure out why the cursor goes behind the h1 */
+h1 {
+    font-size: 30pt;
+    color: black;
+    margin-top: 5px;
+    opacity: 100%;
+}
+
+
+h2 {
+    text-align: center;
+    z-index: 1;
+}
+
+h2:hover {
+    background-color: lightslategray;
+    opacity: 89%;
+    border-radius: 1.3pt;
+    padding: 2%;
+}
+
+section h3 {
+    z-index: 1;
+    margin: 20px 0 20px 0;
+}
+
+
+
+nav {
+    display: flex;
+    align-content:center;
+    flex-direction: column;
+    margin-top: 5px;
+}
+
+
+ul {
+    margin-top: 1.5%;
+    margin-top: 5px;
+
+}
+
+li {
+    display: inline-flex;
+    align-content: flex-end;
+    justify-content: space-between;
+    margin: 0 30px 0 30px;
+    font-size: 16pt;
+    flex-wrap: wrap;
+}
+
+
+a, a:hover, a:focus, a:active {
+    text-decoration: none;
+    color: inherit;
+    text-align: center;
+    padding: 2%;
+}
+
+main {
+    position: absolute;
+}
+
+section {
+    bottom: 70%;
+    display: flex;
+    background-color: inherit;
+}
+
+div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+footer {
+    padding: 30px;
+    font-size: 12pt;
+    font-weight:200;
+    background-color:lightslategrey;
+    color:ghostwhite;
+}
+/*Create classes and pseudo-class for nav with position 'fixed' for autoscroll*/
+.card, .card:hover {
+    display: flex;
+    position: sticky;
+    margin-top: 20%;
+    min-height: 200px;
+    width: auto;
+    justify-content: space-around;
+    align-self: center;
+    flex-wrap: wrap;
+    padding: 40px 0 40px 0;
+}
+
+
+span[data-descr]:hover::after {
+    content: attr(data-descr);
+    position: absolute;
+    left: 220px;
+    bottom: 220px;
+    min-width: 900px;
+    height: 200px;
+    border: 1px #aaaaaa solid;
+    background-color: rgb(93, 104, 125);
+    opacity: 90%;
+    padding: 5%;
+    font-size: 80%;
+    z-index: 1;
+    text-align:center;
+    text-justify: distribute-all-lines;
+    border-radius: 12pt;
+    margin-top: 60px;
+    line-height: 1.8;
+  }
+
